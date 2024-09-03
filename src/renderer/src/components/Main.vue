@@ -93,7 +93,7 @@ export default {
                         console.log('result', result)
                         let success = result.filter(e => !e.length).length
                         let fail = result.filter(e => e.length)
-                        let messsage = `成功删除${success}个文件${fail.length && `，${fail.length}个文件删除失败原因如下:${fail.join(';')}`}`
+                        let messsage = `成功删除${success}个文件${fail.length >0? `，${fail.length}个文件删除失败原因如下:${fail.join(';')}`:''}`
                         window.alert(messsage)
                     })
                 }
