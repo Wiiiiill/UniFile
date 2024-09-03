@@ -1,4 +1,4 @@
-appId: com.electron.app
+appId: com.github.Wiiiiill.UniFile
 productName: unifile
 directories:
   buildResources: build
@@ -17,6 +17,9 @@ nsis:
   shortcutName: ${productName}
   uninstallDisplayName: ${productName}
   createDesktopShortcut: always
+  oneClick: false
+  perMachine: true
+  allowToChangeInstallationDirectory: true
 mac:
   entitlementsInherit: build/entitlements.mac.plist
   extendInfo:
